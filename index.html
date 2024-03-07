@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+        <script defer src="capture.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas></canvas>
+        <table>
+            <thead>
+                <th></th>
+                <th>X방향</th>
+                <th>Y방향</th>
+            </thead>
+            <tr>
+                <td>시작점</td>
+                <td><input type="number" min="0" id="xpos" value="0" /></td>
+                <td><input type="number" min="0" id="ypos" value="0" /></td>
+            </tr>
+            <tr>
+                <td>길이</td>
+                <td><input type="number" min="0" id="width" value="320" /></td>
+                <td><input type="number" min="0" id="height" value="240" /></td>
+            </tr>
+        </table>
+        <button id="startBtn">Start Capture</button>
+        <br />
+        <span id="log"></span>
+    </body>
+</html>
